@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Le Contre | 6:00 AM par l'IA</title>
+    <meta name="description" content="Le journal qui dit ce que les autres ne disent pas. Rédigé à l'aube par l'intelligence artificielle. Propriété de Atmani Bachir.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lecontre.vercel.app/">
+    <meta property="og:title" content="Le Contre | 6:00 AM par l'IA">
+    <meta property="og:description" content="Le journal qui dit ce que les autres ne disent pas. Rédigé à l'aube par l'intelligence artificielle. Propriété de Atmani Bachir.">
+    <meta property="og:image" content="https://picsum.photos/seed/investigation/1200/630">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lecontre.vercel.app/">
+    <meta property="twitter:title" content="Le Contre | 6:00 AM par l'IA">
+    <meta property="twitter:description" content="Le journal qui dit ce que les autres ne disent pas. Rédigé à l'aube par l'intelligence artificielle. Propriété de Atmani Bachir.">
+    <meta property="twitter:image" content="https://picsum.photos/seed/investigation/1200/630">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #FDFCFB; --ink: #1A1A1A; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--bg); 
+            color: var(--ink); 
+            margin: 0; 
+            -webkit-font-smoothing: antialiased;
+        }
+        .dropcap::first-letter {
+            float: left; font-family: 'Playfair Display', serif;
+            font-size: 4rem; line-height: 0.7; padding-top: 8px; padding-right: 12px; font-weight: 900;
+        }
+        @keyframes shimmer {
+            100% { transform: translateX(100%); }
+        }
+        .skeleton {
+            background: #f3f4f6;
+            position: relative;
+            overflow: hidden;
+        }
+        .skeleton::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: translateX(-100%);
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+            animation: shimmer 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
+
